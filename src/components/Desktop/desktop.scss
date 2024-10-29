@@ -1,0 +1,88 @@
+.desktop-container {
+  width: 100%;
+  height: 100vw;
+
+  .desktop-apps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 1.5rem;
+    gap: 5px;
+
+    .desktop-app {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      width: 100px;
+      margin: 0 auto;
+
+      img {
+        width: 35px;
+        height: 35px;
+        
+      }
+
+      h3 {
+        line-break: anywhere;
+        color: var(--white);
+        font-family: var(--font1);
+        font-weight: 200;
+        font-size: 0.7rem;
+      }
+
+      .notepad {
+        content: url(../../assets/notepad.svg);
+      }
+
+      .folder {
+        content: url(../../assets/folder.svg);
+      }
+
+      .github {
+        content: url(../../assets/github.svg);
+      }
+
+      .linkedin {
+        content: url(../../assets/linkedin.svg);
+      }
+
+      .paper {
+        content: url(../../assets/paper.svg);
+      }
+    }
+  }
+
+  .recycle-bin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 3rem;
+    right: 0rem;
+
+    img {
+      content: url(../../assets/recycle_bin.svg);
+    }
+
+    img {
+      width: 35px;
+      height: 35px;
+      
+    }
+
+    h3 {
+      line-break: anywhere;
+      color: var(--white);
+      font-family: var(--font1);
+      font-weight: 200;
+      font-size: 0.7rem;
+    }
+  }
+}

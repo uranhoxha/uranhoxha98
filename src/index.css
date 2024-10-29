@@ -1,0 +1,37 @@
+:root {
+  --gray: #c3c3c3;
+  --white:#fff;
+  --dark-blue:#010081;
+  --border: inset -1px -1px #808080, inset 1px 1px #fff, inset -2px -2px grey,
+    inset 2px 2px #dfdfdf;
+  --border-reverse: inset -1px -1px #ffffff, inset 1px 1px #808080,
+    inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+  --font1: "MS-SANS-SERIF-1", sans-serif;
+  --font2: "REFSAN", sans-serif;
+}
+
+* {
+  cursor: url(./assets/cursor.png), auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #008080;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "MS-SANS-SERIF-1";
+  font-style: normal;
+  font-weight: normal;
+  src: local("MS-SANS-SERIF-1"), url("MS-SANS-SERIF-1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "REFSAN";
+  font-style: normal;
+  font-weight: normal;
+  src: local("REFSAN"), url("REFSAN.woff") format("woff");
+}

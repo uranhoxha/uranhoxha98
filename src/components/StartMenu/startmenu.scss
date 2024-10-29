@@ -1,0 +1,31 @@
+.startmenu-container {
+  position: absolute;
+  bottom: 3rem;
+  left: 3px;
+  background-color: var(--gray);
+  box-shadow: var(--border);
+  width: 15rem;
+  height: 30rem;
+  display: flex;
+
+  .startmenu-title {
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 2rem;
+    border-top: 1px solid var(--gray);
+    border-left: 1px solid var(--gray);
+
+    h3 {
+      transform: rotate(-90deg);
+      margin-bottom: 3.6rem;
+      color: #fff;
+      white-space: nowrap;
+      font-family: var(--font2);
+      span{
+        font-weight: 500;
+      }
+    }
+  }
+}
