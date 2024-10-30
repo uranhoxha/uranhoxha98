@@ -23,8 +23,62 @@
       color: #fff;
       white-space: nowrap;
       font-family: var(--font2);
-      span{
+      span {
         font-weight: 500;
+      }
+    }
+  }
+
+  .startmenu-content {
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      height: 2px;
+      padding-right: 1px;
+      padding-left: 1px;
+      box-shadow: var(--border-reverse);
+      margin-left: 10px;
+    }
+
+    .startmenu-menu {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-left: 10px;
+      margin-top: 5px;
+      width: 100% !important;
+      text-decoration: none;
+      color: #000;
+      &:hover {
+        background-color: var(--dark-blue);
+        color: #fff;
+
+        .github {
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+            brightness(103%) contrast(103%);
+        }
+      }
+
+      img {
+        width: 34px;
+      }
+
+      h3 {
+        font-family: var(--font1);
+        font-weight: 100;
+      }
+
+      .linkedin {
+        content: url(../../assets/linkedin.svg);
+      }
+      .github {
+        content: url(../../assets/github.svg);
       }
     }
   }

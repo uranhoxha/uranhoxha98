@@ -27,9 +27,7 @@
     justify-content: center;
     gap: 10px;
 
-
-    .taskbar-pinned-wrapper{
-      
+    .taskbar-pinned-wrapper {
       padding: 5px;
       width: 28px;
       height: 28px;
@@ -37,7 +35,7 @@
       align-items: center;
       justify-content: center;
 
-      &:hover{
+      &:hover {
         box-shadow: var(--border);
       }
     }
@@ -98,9 +96,6 @@
 
     &.clicked .start-taskbar-content {
       outline: 1px dotted #000;
-
-      
-      
     }
   }
 

@@ -12,14 +12,6 @@ function desktop() {
           <h3>My Projects</h3>
         </div>
         <div className="desktop-app">
-          <img alt="Github logo" className="github" />
-          <h3>GitHub</h3>
-        </div>
-        <div className="desktop-app">
-          <img alt="Linkedin logo" className="linkedin" />
-          <h3>Linkedin</h3>
-        </div>
-        <div className="desktop-app">
           <img alt="Paper logo" className="paper" />
           <h3>Resume</h3>
         </div>
