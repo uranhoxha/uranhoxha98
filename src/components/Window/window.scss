@@ -1,0 +1,68 @@
+.window-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--gray);
+  box-shadow: var(--border);
+
+  .window-titlebar {
+    background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    padding: 0rem 5px;
+    margin: 5px;
+
+    .window-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      img {
+        content: url(../../assets/notepad_small.svg);
+      }
+
+      p {
+        color: var(--white);
+        font-family: var(--font1);
+        font-weight: 100;
+      }
+    }
+
+    .window-close {
+      background-color: var(--gray);
+      width: 18px;
+      height: 18px;
+      font-family: var(--font1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--border);
+      padding: 1px;
+
+      img {
+        content: url(../../assets/close_button.svg);
+        margin-bottom: 1px;
+        margin-right: 0.1px;
+        margin-top: 0.3px;
+      }
+      &:active {
+        box-shadow: var(--border-reverse);
+        img {
+            transform: translate(1px, 1px);
+        }
+      }
+    }
+  }
+
+  .window-content{
+    width: 92.8%; 
+    background-color: var(--white);
+    box-shadow: var(--border-reverse);
+    margin: 2rem 5px;
+    padding: 10px;
+    font-family: var(--font2);
+  }
+}

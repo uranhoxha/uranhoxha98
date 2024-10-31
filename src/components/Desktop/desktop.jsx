@@ -1,9 +1,22 @@
+import { useState } from "react";
 import "./desktop.scss";
-function desktop() {
+import Window from "../Window/window";
+
+function Desktop() {
+  const [showWindow, setShowWindow] = useState(false);
+
+  const handleAboutMeClick = () => {
+    setShowWindow(true);
+  };
+
+  const handleCloseWindow = () => {
+    setShowWindow(false);
+  };
+
   return (
     <div className="desktop-container">
       <div className="desktop-apps">
-        <div className="desktop-app">
+        <div className="desktop-app" onClick={handleAboutMeClick}>
           <img alt="App logo" className="notepad" />
           <h3>About Me</h3>
         </div>
@@ -21,8 +34,11 @@ function desktop() {
         <img alt="Recycle Bin logo" />
         <h3>Recycle Bin</h3>
       </div>
+
+      {/* Conditionally render the Window component and pass handleCloseWindow */}
+      {showWindow && <Window onClose={handleCloseWindow} />}
     </div>
   );
 }
 
-export default desktop;
+export default Desktop;
