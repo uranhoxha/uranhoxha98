@@ -1,0 +1,17 @@
+.about-technologies {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 15px;
+
+  .about-technologies-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      height: 44px;
+    }
+  }
+}

@@ -36,3 +36,36 @@ body {
   font-weight: normal;
   src: local("REFSAN"), url("REFSAN.woff") format("woff");
 }
+
+::-webkit-scrollbar {
+  width: 19px;
+  height: 19px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d7d2d6;
+  outline: 1px solid #868787;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray);
+  box-shadow: var(--border);
+}
+
+::-webkit-scrollbar-button {
+  background-color: var(--gray);
+  box-shadow: var(--border);
+  height: 18px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url(./assets/arrow_up.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url(./assets/arrow_down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}

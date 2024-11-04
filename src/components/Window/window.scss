@@ -20,9 +20,7 @@
       align-items: center;
       justify-content: center;
       gap: 5px;
-      img {
-        content: url(../../assets/notepad_small.svg);
-      }
+      
 
       p {
         color: var(--white);
@@ -57,12 +55,15 @@
     }
   }
 
-  .window-content{
-    width: 92.8%; 
+  .window-content {
+    
     background-color: var(--white);
     box-shadow: var(--border-reverse);
     margin: 2rem 5px;
     padding: 10px;
     font-family: var(--font2);
-  }
+    height: 30rem; 
+    overflow-y: auto !important; 
+}
+
 }
