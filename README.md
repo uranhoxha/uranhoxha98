@@ -1,5 +1,7 @@
 <h1>Personal Portfolio inspired by the great design of Windows 98.</h1>
 
+<h3>DISCLAIMER: Some features might not work on smaller screen sizes, I'm still in the process of fixing them!!</h1>
+
 <h2>The link if you want to visit the website as I develop it:</h2>
 <a href="https://uranhoxha98.netlify.app/" target="_blank">https://uranhoxha98.netlify.app/</a>
 
