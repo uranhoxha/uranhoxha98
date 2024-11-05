@@ -4,6 +4,7 @@ import "./desktop.scss";
 import AboutWindow from "../AllWindows/AboutWindow/aboutWindow";
 import ProjectsWindow from "../AllWindows/ProjectsWindow/projectsWindow";
 import ResumeWindow from "../AllWindows/ResumeWindow/resumeWindow";
+import RecycleWindow from "../AllWindows/RecycleWindow/recycleWindow"
 
 function Desktop() {
   const [showWindow, setShowWindow] = useState(false);
@@ -22,6 +23,11 @@ function Desktop() {
   const handleResumeClick = () => {
     setShowWindow(true);
     setWindowType("resume");
+  };
+
+  const handleRecycleClick = () => {
+    setShowWindow(true);
+    setWindowType("recycle");
   };
 
   const handleCloseWindow = () => {
@@ -46,7 +52,7 @@ function Desktop() {
         </div>
       </div>
 
-      <div className="recycle-bin">
+      <div className="recycle-bin" onDoubleClick={handleRecycleClick}>
         <img alt="Recycle Bin logo" />
         <h3>Recycle Bin</h3>
       </div>
@@ -54,6 +60,7 @@ function Desktop() {
       {showWindow && windowType === "about" && <AboutWindow onClose={handleCloseWindow} />}
       {showWindow && windowType === "projects" && <ProjectsWindow onClose={handleCloseWindow} />}
       {showWindow && windowType === "resume" && <ResumeWindow onClose={handleCloseWindow} />}
+      {showWindow && windowType === "recycle" && <RecycleWindow onClose={handleCloseWindow} />}
     </div>
   );
 }
