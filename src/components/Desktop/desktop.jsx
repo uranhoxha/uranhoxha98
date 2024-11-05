@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./desktop.scss";
 
-import AboutWindow from "../AllWindows/aboutWindow";
-import ProjectsWindow from "../AllWindows/projectsWindow";
+import AboutWindow from "../AllWindows/AboutWindow/aboutWindow";
+import ProjectsWindow from "../AllWindows/ProjectsWindow/projectsWindow";
+import ResumeWindow from "../AllWindows/ResumeWindow/resumeWindow";
 
 function Desktop() {
   const [showWindow, setShowWindow] = useState(false);
@@ -16,6 +17,11 @@ function Desktop() {
   const handleProjectsClick = () => {
     setShowWindow(true);
     setWindowType("projects");
+  };
+
+  const handleResumeClick = () => {
+    setShowWindow(true);
+    setWindowType("resume");
   };
 
   const handleCloseWindow = () => {
@@ -34,7 +40,7 @@ function Desktop() {
           <img alt="Folder logo" className="folder" />
           <h3>My Projects</h3>
         </div>
-        <div className="desktop-app">
+        <div className="desktop-app" onDoubleClick={handleResumeClick}>
           <img alt="Paper logo" className="paper" />
           <h3>Resume</h3>
         </div>
@@ -47,6 +53,7 @@ function Desktop() {
 
       {showWindow && windowType === "about" && <AboutWindow onClose={handleCloseWindow} />}
       {showWindow && windowType === "projects" && <ProjectsWindow onClose={handleCloseWindow} />}
+      {showWindow && windowType === "resume" && <ResumeWindow onClose={handleCloseWindow} />}
     </div>
   );
 }

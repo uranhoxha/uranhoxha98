@@ -1,13 +1,13 @@
-import Window from "../Window/window";
-import notepad_small from "../../assets/notepad_small.svg";
+import Window from "../../Window/window";
+import notepad_small from "../../../assets/notepad_small.svg";
 import "./aboutWindow.scss";
 
-import reactLogo from "../../assets/projectImages/react.png";
-import htmlLogo from "../../assets/projectImages/html.png";
-import cssLogo from "../../assets/projectImages/css.png";
-import JSLogo from "../../assets/projectImages/javascript.png";
-import scssLogo from "../../assets/projectImages/scss.png";
-import figmaLogo from "../../assets/projectImages/figma.png";
+import reactLogo from "../../../assets/projectImages/react.png";
+import htmlLogo from "../../../assets/projectImages/html.png";
+import cssLogo from "../../../assets/projectImages/css.png";
+import JSLogo from "../../../assets/projectImages/javascript.png";
+import scssLogo from "../../../assets/projectImages/scss.png";
+import figmaLogo from "../../../assets/projectImages/figma.png";
 
 function AboutWindow({ onClose }) {
   return (

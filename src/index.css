@@ -37,6 +37,11 @@ body {
   src: local("REFSAN"), url("REFSAN.woff") format("woff");
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 ::-webkit-scrollbar {
   width: 19px;
   height: 19px;
