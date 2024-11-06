@@ -10,6 +10,9 @@ function recycleWindow({ onClose }) {
   return (
     <Window title="Recycle Bin" iconSrc={recyclBin_small} onClose={onClose}>
       <a href="https://uranhoxha.netlify.app/" target="_blank" rel="noreferrer">
+      <h2>------------------------------------</h2>
+      <h2>Old not in-use projects</h2>
+      <h2>------------------------------------</h2>
         <div className="recycleBin-content">
           <img
             src={oldPortfolio}

@@ -1,0 +1,45 @@
+.resume-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    iframe {
+        width: 50rem;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .resume-content {
+        align-items: center;
+        gap: 16px;
+
+        iframe {
+            width: 40rem; 
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .resume-content {
+        gap: 12px;
+        padding: 0 16px;
+
+        iframe {
+            width: 20rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-content {
+        gap: 8px;
+
+        iframe {
+            width: 15rem;
+        }
+    }
+}

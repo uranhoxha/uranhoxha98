@@ -4,63 +4,55 @@ import "./desktop.scss";
 import AboutWindow from "../AllWindows/AboutWindow/aboutWindow";
 import ProjectsWindow from "../AllWindows/ProjectsWindow/projectsWindow";
 import ResumeWindow from "../AllWindows/ResumeWindow/resumeWindow";
-import RecycleWindow from "../AllWindows/RecycleWindow/recycleWindow"
+import RecycleWindow from "../AllWindows/RecycleWindow/recycleWindow";
 
 function Desktop() {
-  const [showWindow, setShowWindow] = useState(false);
-  const [windowType, setWindowType] = useState(null);
+  const [openWindows, setOpenWindows] = useState([]);
 
-  const handleAboutMeClick = () => {
-    setShowWindow(true);
-    setWindowType("about");
+  const handleOpenWindow = (type) => {
+    setOpenWindows((prevWindows) => [...prevWindows, type]);
   };
 
-  const handleProjectsClick = () => {
-    setShowWindow(true);
-    setWindowType("projects");
-  };
-
-  const handleResumeClick = () => {
-    setShowWindow(true);
-    setWindowType("resume");
-  };
-
-  const handleRecycleClick = () => {
-    setShowWindow(true);
-    setWindowType("recycle");
-  };
-
-  const handleCloseWindow = () => {
-    setShowWindow(false);
-    setWindowType(null);
+  const handleCloseWindow = (index) => {
+    setOpenWindows((prevWindows) => prevWindows.filter((_, i) => i !== index));
   };
 
   return (
     <div className="desktop-container">
       <div className="desktop-apps">
-        <div className="desktop-app" onDoubleClick={handleAboutMeClick}>
+        <div className="desktop-app" onDoubleClick={() => handleOpenWindow("about")}>
           <img alt="App logo" className="notepad" />
           <h3>About Me</h3>
         </div>
-        <div className="desktop-app" onDoubleClick={handleProjectsClick}>
+        <div className="desktop-app" onDoubleClick={() => handleOpenWindow("projects")}>
           <img alt="Folder logo" className="folder" />
           <h3>My Projects</h3>
         </div>
-        <div className="desktop-app" onDoubleClick={handleResumeClick}>
+        <div className="desktop-app" onDoubleClick={() => handleOpenWindow("resume")}>
           <img alt="Paper logo" className="paper" />
           <h3>Resume</h3>
         </div>
       </div>
 
-      <div className="recycle-bin" onDoubleClick={handleRecycleClick}>
+      <div className="recycle-bin" onDoubleClick={() => handleOpenWindow("recycle")}>
         <img alt="Recycle Bin logo" />
         <h3>Recycle Bin</h3>
       </div>
 
-      {showWindow && windowType === "about" && <AboutWindow onClose={handleCloseWindow} />}
-      {showWindow && windowType === "projects" && <ProjectsWindow onClose={handleCloseWindow} />}
-      {showWindow && windowType === "resume" && <ResumeWindow onClose={handleCloseWindow} />}
-      {showWindow && windowType === "recycle" && <RecycleWindow onClose={handleCloseWindow} />}
+      {openWindows.map((windowType, index) => {
+        switch (windowType) {
+          case "about":
+            return <AboutWindow key={index} onClose={() => handleCloseWindow(index)} />;
+          case "projects":
+            return <ProjectsWindow key={index} onClose={() => handleCloseWindow(index)} />;
+          case "resume":
+            return <ResumeWindow key={index} onClose={() => handleCloseWindow(index)} />;
+          case "recycle":
+            return <RecycleWindow key={index} onClose={() => handleCloseWindow(index)} />;
+          default:
+            return null;
+        }
+      })}
     </div>
   );
 }

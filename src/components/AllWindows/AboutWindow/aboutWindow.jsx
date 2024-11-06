@@ -16,22 +16,24 @@ function AboutWindow({ onClose }) {
       iconSrc={notepad_small}
       onClose={onClose}
     >
-      <h2>------------------------------------</h2>
-      <h2>About Me</h2>
-      <p>
-        I'm a 20-year-old student with a keen eye for web design/development,
-        constantly driven to create visually appealing websites that provide
-        delightful and engaging user experiences and bringing them to life.
-      </p>
-      <h2>------------------------------------</h2>
-      <h3>More About Me</h3>
-      <p>
-        When I'm not designing, you can find me exploring the outdoors and
-        capturing the beauty of nature. I enjoy collaborating with others and
-        value meaningful connections.
-      </p>
-      <h2>------------------------------------</h2>
-      <h3>The technologies I use</h3>
+      <div className="about-content">
+        <h2>------------------------------------</h2>
+        <h2>About Me</h2>
+        <p>
+          I'm a 20-year-old student with a keen eye for web design/development,
+          constantly driven to create visually appealing websites that provide
+          delightful and engaging user experiences and bringing them to life.
+        </p>
+        <h2>------------------------------------</h2>
+        <h3>More About Me</h3>
+        <p>
+          When I'm not designing, you can find me exploring the outdoors and
+          capturing the beauty of nature. I enjoy collaborating with others and
+          value meaningful connections.
+        </p>
+        <h2>------------------------------------</h2>
+        <h3>The technologies I use</h3>
+      </div>
 
       <div className="about-technologies">
         <div className="about-technologies-logo">

@@ -17,10 +17,7 @@ const Resume = () => {
         Uran Hoxha
       </h1>
       <p style={{ textAlign: "center", padding: "8pt 0" }}>
-        <a
-          href="mailto:hoxhauran9@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
+        <span
           style={{
             color: "black",
             fontFamily: "'Palatino Linotype', serif",
@@ -28,7 +25,7 @@ const Resume = () => {
           }}
         >
           Prishtinë, 10000 Kosovo • 049629860 • hoxhauran9@gmail.com
-        </a>
+        </span>
       </p>
 
       <h2
@@ -94,7 +91,9 @@ const Resume = () => {
           fontSize: "12pt",
         }}
       >
-        Frontend Developer with a focus on clean, precise work. Enjoys bringing design ideas to life and creating original designs from scratch. A lifelong computer enthusiast with a genuine love for technology.
+        Frontend Developer with a focus on clean, precise work. Enjoys bringing
+        design ideas to life and creating original designs from scratch. A
+        lifelong computer enthusiast with a genuine love for technology.
       </p>
 
       <h2

@@ -3,6 +3,7 @@
   --white: #fff;
   --dark-blue: #010081;
   --light-blue: #0000a8;
+  --background: #008080;
   --border: inset -1px -1px #808080, inset 1px 1px #fff, inset -2px -2px grey,
     inset 2px 2px #dfdfdf;
   --border-reverse: inset -1px -1px #ffffff, inset 1px 1px #808080,
@@ -19,8 +20,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #008080;
-  overflow: hidden;
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+*{
+  outline: 1px solid green;
 }
 
 @font-face {
