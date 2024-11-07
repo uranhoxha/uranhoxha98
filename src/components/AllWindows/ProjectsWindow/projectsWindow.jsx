@@ -49,7 +49,7 @@ function ProjectsWindow({ onClose }) {
       image: cryptto,
       title: "Cryptto",
       description:
-        "First project on my summer internshipship at KosovaOutsource LLC. Cryptocurrency price tracker.",
+        "First project on my summer internship at KosovaOutsource LLC. Cryptocurrency price tracker.",
       logos: [reactLogo, scssLogo],
       madeBy: "Designed by KosovaOutsource LLC",
       link: "https://crypttoo.netlify.app/",
