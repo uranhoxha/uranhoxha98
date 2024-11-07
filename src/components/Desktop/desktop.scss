@@ -22,7 +22,6 @@
       img {
         width: 35px;
         height: 35px;
-        
       }
 
       h3 {
@@ -31,6 +30,11 @@
         font-family: var(--font1);
         font-weight: 200;
         font-size: 0.7rem;
+      }
+
+      .clicked {
+        background-color: var(--dark-blue);
+        outline: 1px dotted var(--gray);
       }
 
       .notepad {
@@ -74,7 +78,6 @@
     img {
       width: 35px;
       height: 35px;
-      
     }
 
     h3 {
@@ -87,6 +90,64 @@
   }
 }
 
-.window-container {
- 
+.clicked {
+
+  .selection-effect-about {
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    mask-image: url(../../assets/notepad.svg);
+    -webkit-mask-image: url(../../assets/notepad.svg);
+    background-color: rgb(0, 0, 128);
+    opacity: 0.5;
+    transform: translate(95%, -527%);
+  }
+  .selection-effect-projects {
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    mask-image: url(../../assets/folder.svg);
+    -webkit-mask-image: url(../../assets/folder.svg);
+    background-color: rgb(0, 0, 128);
+    opacity: 0.5;
+    transform: translate(95%, -315%);
+  }
+
+  .selection-effect-resume {
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    mask-image: url(../../assets/paper.svg);
+    -webkit-mask-image: url(../../assets/paper.svg);
+    background-color: rgb(0, 0, 128);
+    opacity: 0.5;
+    transform: translate(95%, -100%);
+  }
+  .selection-effect-recycle {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 0;
+    top: 0;
+    mask-image: url(../../assets/recycle_bin.svg);
+    -webkit-mask-image: url(../../assets/recycle_bin.svg);
+    background-color: rgb(0, 0, 128);
+    opacity: 0.5;
+    transform: translate(90%, 0);
+  }
+
+  h3 {
+    background-color: var(--dark-blue);
+    outline: 1px dotted #d6e424;
+  }
 }
