@@ -1,9 +1,8 @@
 import "./resumeWindow.scss";
 import Window from "../../Window/window";
 import paperIcon from "../../../assets/paper_small.png";
-import Resume from "../../Resume/resume";
 import resumePDF from "../../Resume/Uran_Hoxha_Resume.pdf";
-import CV from "../../../assets/Resume - Uran Hoxha.png";
+
 
 function ResumeWindow({ onClose }) {
   return (
@@ -11,9 +10,9 @@ function ResumeWindow({ onClose }) {
       <div className="resume-content">
         <iframe
           src="https://drive.google.com/file/d/1ZLy02YCu3JZwR-j-XwmZ1hFSSoQwpRWI/preview"
+          title="Resume"
           height="480"
           allow="autoplay"
-          title="Uran Hoxha Resume"
         ></iframe>
         <a
           href={resumePDF}
