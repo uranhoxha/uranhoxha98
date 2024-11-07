@@ -1,0 +1,200 @@
+.welcomeWindow-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--gray);
+  box-shadow: var(--border);
+
+  .welcomeWindow-titlebar {
+    background: rgb(128, 128, 128);
+    background: linear-gradient(
+      90deg,
+      rgba(128, 128, 128, 1) 20%,
+      rgba(181, 181, 181, 1) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    padding: 0rem 5px;
+    margin: 5px;
+
+    .welcomeWindow-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      p {
+        color: var(--white);
+        font-family: var(--font1);
+        font-weight: 100;
+      }
+    }
+  }
+  .welcomeWindow-close {
+    background-color: var(--gray);
+    width: 18px;
+    height: 18px;
+    font-family: var(--font1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--border);
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    padding: 1px;
+
+    img {
+      content: url(../../assets/close_button.svg);
+      margin-bottom: 1px;
+      margin-right: 0.1px;
+      margin-top: 0.3px;
+    }
+    &:active {
+      box-shadow: var(--border-reverse);
+      img {
+        transform: translate(1px, 1px);
+      }
+    }
+  }
+
+  .welcomeWindow-content {
+    background: linear-gradient(
+      130deg,
+      rgba(105, 163, 212, 1) 30%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    box-shadow: var(--border);
+    padding: 10px;
+    font-family: var(--font2);
+    height: 27rem;
+    overflow-y: auto !important;
+    position: relative;
+
+    
+    .welcome-button {
+      position: absolute;
+      outline: none;
+      border: none;
+      right: 10px;
+      background-color: var(--gray);
+      box-shadow: var(--border);
+      font-family: var(--font1);
+      padding: 0px 25px;
+
+      &:active {
+        box-shadow: var(--border-reverse);
+        p {
+          transform: translate(2px, 2px);
+        }
+      }
+    }
+
+    .welcomeWindow-contentTitle {
+      font-weight: 900;
+      margin-bottom: 4rem;
+      width: 100%;
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 6px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          to right,
+          #f7c04a 0%,
+          #f7c04a 25%,
+          #539165 25%,
+          #539165 50%,
+          #df2e38 50%,
+          #df2e38 75%,
+          #804674 75%,
+          #804674 100%
+        );
+      }
+
+      h2 {
+        font-size: clamp(1.1875rem, 0.9792rem + 1.1111vw, 2.3125rem);
+      }
+    }
+
+    .welcomeWindow-contents {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+
+      @media (max-width: 868px) {
+        flex-direction: column;
+      }
+
+      .welcomeWindow-contents-one,
+      .welcomeWindow-contents-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 45%;
+
+        h3 {
+          border-right: 2px solid #ffffff;
+          border-bottom: 2px solid #ffffff;
+          background-color: #000;
+          color: var(--white);
+          margin: 0;
+          padding: 0px 37%;
+          font-weight: 500;
+          margin-left: -8px;
+        }
+
+        h2 {
+          margin: 0;
+        }
+
+        p {
+          font-family: var(--font1);
+        }
+
+        ul {
+          list-style-type: none;
+          width: 100%;
+
+          li {
+            border-bottom: 2px solid #c0c0c0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: clamp(0.875rem, 0.794rem + 0.4321vw, 1.3125rem);
+            gap: 5px;
+            margin-left: -48px;
+
+            div {
+              width: 12px;
+              height: 31px;
+            }
+
+            .yellow {
+              background-color: #f7c04a;
+            }
+            .green {
+              background-color: #539165;
+            }
+            .red {
+              background-color: #df2e38;
+            }
+            .purple {
+              background-color: #804674;
+            }
+          }
+        }
+      }
+    }
+  }
+}

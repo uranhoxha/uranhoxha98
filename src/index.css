@@ -21,12 +21,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: var(--background);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-*{
-  outline: 1px solid green;
-}
 
 @font-face {
   font-family: "MS-SANS-SERIF-1";
@@ -42,7 +39,7 @@ body {
   src: local("REFSAN"), url("REFSAN.woff") format("woff");
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
