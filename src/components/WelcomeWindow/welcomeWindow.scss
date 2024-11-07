@@ -30,6 +30,7 @@
         color: var(--white);
         font-family: var(--font1);
         font-weight: 100;
+        font-size: clamp(0.875rem, 0.7519rem + 0.1135vw, 1rem);
       }
     }
   }
@@ -73,13 +74,14 @@
     height: 27rem;
     overflow-y: auto !important;
     position: relative;
+    padding-bottom: 30px;
 
     
     .welcome-button {
-      position: absolute;
+      float: right;
       outline: none;
       border: none;
-      right: 10px;
+
       background-color: var(--gray);
       box-shadow: var(--border);
       font-family: var(--font1);
@@ -96,6 +98,7 @@
     .welcomeWindow-contentTitle {
       font-weight: 900;
       margin-bottom: 4rem;
+      padding-bottom: 0.1px;
       width: 100%;
       position: relative;
 
