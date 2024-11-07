@@ -1,4 +1,5 @@
 <h1>Personal Portfolio inspired by the great design of Windows 98.</h1>
+<h4>Everything here I coded myself except for the dragging part (I used react-draggable for that) but apart from that every style and other fucntions I coded myself (no library used for styling and whatnot)</h2>
 
 <h3>DISCLAIMER: Some features might not work on smaller screen sizes, I'm still in the process of fixing them!!</h1>
 
