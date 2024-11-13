@@ -20,7 +20,7 @@ function AboutWindow({ onClose }) {
         <h2>------------------------------------</h2>
         <h2>About Me</h2>
         <p>
-          I'm a 20-year-old student with a keen eye for web design/development,
+          I'm a 20-year-old student based in Kosova with a keen eye for web design/development,
           constantly driven to create visually appealing websites that provide
           delightful and engaging user experiences and bringing them to life.
         </p>

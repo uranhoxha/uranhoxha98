@@ -5,8 +5,7 @@ import "./projectsWindow.scss";
 import maskedInMetal from "../../../assets/projectImages/masked_in_metal.png";
 import pawfectPals from "../../../assets/projectImages/pawfect_pals.png";
 import doit from "../../../assets/projectImages/doit.png";
-import cryptto from "../../../assets/projectImages/cryptto.png";
-import modelkos from "../../../assets/projectImages/modelkos.png";
+
 
 import reactLogo from "../../../assets/projectImages/react.png";
 import htmlLogo from "../../../assets/projectImages/html.png";
@@ -44,24 +43,6 @@ function ProjectsWindow({ onClose }) {
       logos: [htmlLogo, cssLogo, JSLogo, figmaLogo],
       madeBy: "Designed by Me",
       link: "https://doit-task-managment.netlify.app/",
-    },
-    {
-      image: cryptto,
-      title: "Cryptto",
-      description:
-        "First project on my summer internship at KosovaOutsource LLC. Cryptocurrency price tracker.",
-      logos: [reactLogo, scssLogo],
-      madeBy: "Designed by KosovaOutsource LLC",
-      link: "https://crypttoo.netlify.app/",
-    },
-    {
-      image: modelkos,
-      title: "ModelKos",
-      description:
-        "Second and final project again on my internship. Model agency website for Modelkos",
-      logos: [reactLogo, scssLogo],
-      madeBy: "Designed by KosovaOutsource LLC",
-      link: "https://modelkosova.netlify.app/",
     },
   ];
 
