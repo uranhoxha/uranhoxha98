@@ -96,7 +96,7 @@ function ProjectsWindow({ onClose }) {
               </div>
               <div className="project-footer">
                 <p>{project.madeBy}</p>
-                <a href={project.githubLink} target="_blank">Github link</a>
+                <a href={project.githubLink} target="_blank" rel="noreferrer">Github link</a>
               </div>
             </div>
           </div>
