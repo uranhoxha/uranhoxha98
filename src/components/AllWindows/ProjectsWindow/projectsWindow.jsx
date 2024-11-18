@@ -6,6 +6,7 @@ import maskedInMetal from "../../../assets/projectImages/masked_in_metal.png";
 import pawfectPals from "../../../assets/projectImages/pawfect_pals.png";
 import doit from "../../../assets/projectImages/doit.png";
 import uranhoxha98 from "../../../assets/projectImages/uranhoxha98.png";
+import gpt3 from "../../../assets/projectImages/gpt3.png";
 
 import reactLogo from "../../../assets/projectImages/react.png";
 import htmlLogo from "../../../assets/projectImages/html.png";
@@ -18,6 +19,17 @@ import { MdOpenInNew } from "react-icons/md";
 function ProjectsWindow({ onClose }) {
   const projects = [
     {
+      image: gpt3,
+      title: "GPT3",
+      description:
+        "First ever website I coded with React with the help of a YouTube video.",
+      logos: [reactLogo, cssLogo],
+      madeBy: "Designed by Me",
+      link: "https://gpt3-website-urani.netlify.app/",
+      githubLink: "https://github.com/uranhoxha/GPT3-Website",
+      target: "_blank",
+    },
+    {
       image: pawfectPals,
       title: "Pawfect Pals",
       description:
@@ -25,7 +37,7 @@ function ProjectsWindow({ onClose }) {
       logos: [reactLogo, cssLogo, figmaLogo],
       madeBy: "Designed by Me",
       link: "https://pawfect-pals.netlify.app/",
-      githubLink:"https://github.com/uranhoxha/petshop",
+      githubLink: "https://github.com/uranhoxha/petshop",
       target: "_blank",
     },
     {
@@ -36,7 +48,7 @@ function ProjectsWindow({ onClose }) {
       logos: [reactLogo, cssLogo, figmaLogo],
       madeBy: "Designed by Me",
       link: "https://masked-in-metal.netlify.app/",
-      githubLink:"https://github.com/uranhoxha/mfdoom-shop",
+      githubLink: "https://github.com/uranhoxha/mfdoom-shop",
       target: "_blank",
     },
     {
@@ -47,17 +59,17 @@ function ProjectsWindow({ onClose }) {
       logos: [htmlLogo, cssLogo, JSLogo, figmaLogo],
       madeBy: "Designed by Me",
       link: "https://doit-task-managment.netlify.app/",
-      githubLink:"https://github.com/uranhoxha/doit",
+      githubLink: "https://github.com/uranhoxha/doit",
       target: "_blank",
     },
     {
       image: uranhoxha98,
-      title: "uranhxha98",
+      title: "uranhoxha98",
       description: "My current portfolio. The website you are currently on.",
       logos: [reactLogo, scssLogo],
       madeBy: "Designed by Me",
       link: "#",
-      githubLink:"https://github.com/uranhoxha/uranhoxha98",
+      githubLink: "https://github.com/uranhoxha/uranhoxha98",
       target: "_self",
     },
   ];
@@ -96,7 +108,9 @@ function ProjectsWindow({ onClose }) {
               </div>
               <div className="project-footer">
                 <p>{project.madeBy}</p>
-                <a href={project.githubLink} target="_blank" rel="noreferrer">Github link</a>
+                <a href={project.githubLink} target="_blank" rel="noreferrer">
+                  Github link
+                </a>
               </div>
             </div>
           </div>
