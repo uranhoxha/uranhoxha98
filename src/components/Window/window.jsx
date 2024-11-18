@@ -3,7 +3,10 @@ import "./window.scss";
 
 function Window({ title, iconSrc, children, onClose }) {
   return (
-    <Draggable handle=".window-titlebar" defaultPosition={{ x: -100, y: -100 }} bounds="body">
+    <Draggable
+      handle=".window-titlebar"
+      defaultPosition={{ x: -100, y: -100 }}
+    >
       <div className="window-container">
         <div className="window-titlebar">
           <div className="window-title">

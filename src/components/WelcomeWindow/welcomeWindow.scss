@@ -5,6 +5,7 @@
   transform: translate(-50%, -50%);
   background-color: var(--gray);
   box-shadow: var(--border);
+  min-width: 300px;
 
   .welcomeWindow-titlebar {
     background: rgb(128, 128, 128);

@@ -50,5 +50,17 @@
         height: 44px;
       }
     }
+
+    .project-footer{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+
+      a{
+        cursor: url(../../../assets/pointer.png);
+        text-decoration: underline;
+      }
+    }
   }
 }
