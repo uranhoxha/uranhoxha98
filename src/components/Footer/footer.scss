@@ -84,6 +84,7 @@
 
     h3 {
       font-family: var(--font1);
+      background-color: none !important;
     }
 
     &:active {
@@ -94,7 +95,7 @@
       }
     }
 
-    &.clicked .start-taskbar-content {
+    &.footer-clicked .start-taskbar-content {
       outline: 1px dotted #000;
     }
   }
@@ -108,7 +109,7 @@
     padding: 0px 15px;
     margin-right: 10px;
     box-shadow: var(--border-reverse);
-    h3{
+    h3 {
       font-weight: 100;
       text-transform: uppercase;
       width: 100%;

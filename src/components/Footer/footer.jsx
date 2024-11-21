@@ -19,7 +19,7 @@ function Footer() {
     <div className="footer-container">
       <div className="taskbar-content-one">
         <div
-          className={`start-taskbar ${isClicked ? "clicked" : ""}`}
+          className={`start-taskbar ${isClicked ? "footer-clicked" : ""}`}
           onClick={handleStartClick}
           ref={startTaskbarRef}
         >
