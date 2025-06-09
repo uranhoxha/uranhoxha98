@@ -7,6 +7,9 @@ import pawfectPals from "../../../assets/projectImages/pawfect_pals.png";
 import doit from "../../../assets/projectImages/doit.png";
 import uranhoxha98 from "../../../assets/projectImages/uranhoxha98.png";
 import gpt3 from "../../../assets/projectImages/gpt3.png";
+import cipherVault from "../../../assets/projectImages/ciphervault.png";
+import hyperscales from "../../../assets/projectImages/hyperscales.png";
+import foton from "../../../assets/projectImages/foton.png";
 
 import reactLogo from "../../../assets/projectImages/react.png";
 import htmlLogo from "../../../assets/projectImages/html.png";
@@ -14,17 +17,53 @@ import cssLogo from "../../../assets/projectImages/css.png";
 import JSLogo from "../../../assets/projectImages/javascript.png";
 import scssLogo from "../../../assets/projectImages/scss.png";
 import figmaLogo from "../../../assets/projectImages/figma.png";
+import nextLogo from "../../../assets/projectImages/next.png";
+import tailwindLogo from "../../../assets/projectImages/tailwind.png";
+
 import { MdOpenInNew } from "react-icons/md";
 
 function ProjectsWindow({ onClose }) {
   const projects = [
+    {
+      image: foton,
+      title: "Foton",
+      description: "The team at FOTON entrusted me with the full rebranding and redevelopment of their company website from the ground up. ",
+      logos: [nextLogo, tailwindLogo, figmaLogo],
+      madeBy: "Designed by Me",
+      link: "https://foton-ks.com/",
+      githubLink: "",
+      target: "_blank",
+    },
+    {
+      image: hyperscales,
+      title: "HyperScales",
+      description:
+        "Project we did while working at FOTON about a marketing agency based in USA.",
+      logos: [nextLogo, tailwindLogo, figmaLogo],
+      madeBy: "Designed by Me",
+      link: "https://www.hyperscales.digital/home",
+      githubLink: "",
+      target: "_blank",
+    },
+
+    {
+      image: cipherVault,
+      title: "Cipher Vault",
+      description:
+        "Project about different encryption methods and how to use them.",
+      logos: [htmlLogo, cssLogo, JSLogo],
+      madeBy: "Designed by Me",
+      link: "https://cipher-vault.netlify.app/",
+      githubLink: "https://github.com/uranhoxha/Data-Security-Project",
+      target: "_blank",
+    },
     {
       image: gpt3,
       title: "GPT3",
       description:
         "First ever website I coded with React with the help of a YouTube video.",
       logos: [reactLogo, cssLogo],
-      madeBy: "Designed by Me",
+      madeBy: "Designed by JavaScript Mastery",
       link: "https://gpt3-website-urani.netlify.app/",
       githubLink: "https://github.com/uranhoxha/GPT3-Website",
       target: "_blank",
