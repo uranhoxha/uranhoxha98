@@ -13,6 +13,23 @@ import tailwindLogo from "../../../assets/projectImages/tailwind.png";
 import TSLogo from "../../../assets/projectImages/typescript.png";
 
 function AboutWindow({ onClose }) {
+  const getAge = () => {
+    const birthDate = new Date(2004, 7, 31);
+    const today = new Date();
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const hasHadBirthdayThisYear =
+      today.getMonth() > birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() &&
+        today.getDate() >= birthDate.getDate());
+
+    if (!hasHadBirthdayThisYear) {
+      age--;
+    }
+
+    return age;
+  };
+
   return (
     <Window
       title="About Me - Notepad"
@@ -21,21 +38,34 @@ function AboutWindow({ onClose }) {
     >
       <div className="about-content">
         <h2>------------------------------------</h2>
-        <h2>About Me</h2>
+        <h1>
+          <pre style={{ fontFamily: "monospace", fontSize: "12px" }}>
+            {`   _____ ___.                  __                    
+  /  _  \\_ |__   ____  __ ___/  |_    _____   ____  
+ /  /_\\  \\| __ \\ /  _ \\|  |  \\   __\\  /     \\_/ __ \\ 
+/    |    \\ \\_\\ (  <_> )  |  /|  |   |  Y Y  \\  ___/ 
+\\____|__  /___  /\\____/|____/ |__|   |__|_|  /\\___  >
+        \\/    \\/                           \\/     \\/`}
+          </pre>
+        </h1>
         <p>
-          I'm a 20-year-old student based in Kosova with a keen eye for web design/development,
-          constantly driven to create visually appealing websites that provide
-          delightful and engaging user experiences and bringing them to life.
+          Hello, I'm Urani a {getAge()} year old software developer and designer
+          based in Kosova. I like designing functional websites and then
+          bringing said websites into life, I'm always down to challenge myself
+          with new and crazy ideas.
         </p>
         <h2>------------------------------------</h2>
         <h3>More About Me</h3>
         <p>
-          When I'm not designing, you can find me exploring the outdoors and
-          capturing the beauty of nature. I enjoy collaborating with others and
-          value meaningful connections. I also enjoy listening to musc you can find my Spotify account linked in the Taskbar.
+          When I'm not on my computer, you can find me explorin
+          <strong>g</strong> the nature and capturin<strong>g</strong> the
+          beauty of the world. I enjoy working in tea<strong>m</strong>s and val
+          <strong>u</strong>e meaningful connections. I enjoy listening to music
+          you can find my Spotify account linked in the taskbar feel free to
+          follow I'll return the favor :D.
         </p>
         <h2>------------------------------------</h2>
-        <h3>The technologies I use</h3>
+        <h3>The technologies and tools I use</h3>
       </div>
 
       <div className="about-technologies">
