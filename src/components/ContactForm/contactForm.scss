@@ -21,15 +21,18 @@
 .send-email-textarea {
   width: 100%;
   box-sizing: border-box;
+  font-size: 17px ;
 }
 
 .send-email-textarea {
   resize: vertical;
   min-height: 150px;
+  max-height: 200px;
 }
 
 .send-email-button {
   align-self: flex-start;
+  font-size: 20px;
 }
 
 .send-email-overlay {
