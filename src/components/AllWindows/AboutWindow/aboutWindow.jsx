@@ -49,19 +49,19 @@ function AboutWindow({ onClose }) {
           </pre>
         </h1>
         <p>
-          Hello, I'm Urani a {getAge()} year old software developer and designer
+          Hello, i'm Urani a {getAge()} year old software developer and designer
           based in Kosova. I like designing functional websites and then
-          bringing said websites into life, I'm always down to challenge myself
+          bringing said websites into life, i'm always down to challenge myself
           with new and crazy ideas.
         </p>
         <h2>------------------------------------</h2>
         <h3>More About Me</h3>
         <p>
-          When I'm not on my computer, you can find me explorin
+          When i'm not on my computer, you can find me explorin
           <strong>g</strong> the nature and capturin<strong>g</strong> the
           beauty of the world. I enjoy working in tea<strong>m</strong>s and val
-          <strong>u</strong>e meaningful connections. I enjoy listening to music
-          you can find my Spotify account linked in the taskbar feel free to
+          <strong>u</strong>e meaningful connections. True enjoyer of music,
+          you can find my Spotify account in the taskbar, feel free to
           follow I'll return the favor :D.
         </p>
         <h2>------------------------------------</h2>

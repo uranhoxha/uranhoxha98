@@ -118,6 +118,8 @@ function ProjectsWindow({ onClose }) {
       <h2>------------------------------------</h2>
       <h2>My Projects</h2>
       <h2>------------------------------------</h2>
+      <p>Projects i had the pleassure in working on from whole rebraning of companies to just silly projects i made to pass the time</p>
+      <h2>------------------------------------</h2>
       {projects.map((project, index) => (
         <a
           href={project.link}
