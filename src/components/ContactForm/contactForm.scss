@@ -1,0 +1,52 @@
+.send-email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.send-email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.send-email-label {
+  align-self: flex-start;
+}
+
+.send-email-input,
+.send-email-textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.send-email-textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.send-email-button {
+  align-self: flex-start;
+}
+
+.send-email-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-email-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  max-width: 80%;
+}

@@ -6,6 +6,7 @@ import ProjectsWindow from "../AllWindows/ProjectsWindow/projectsWindow";
 import ResumeWindow from "../AllWindows/ResumeWindow/resumeWindow";
 import RecycleWindow from "../AllWindows/RecycleWindow/recycleWindow";
 import WelcomeWindow from "../WelcomeWindow/welcomeWindow";
+import ContactWindow from "../AllWindows/ContactWindow/contactWindow";
 
 function Desktop() {
   const [openWindows, setOpenWindows] = useState([]);
@@ -43,6 +44,7 @@ function Desktop() {
           </>
           <h3>About Me</h3>
         </div>
+
         <div
           className={`desktop-app ${
             clickedApp === "projects" ? "clicked" : ""
@@ -55,6 +57,17 @@ function Desktop() {
             <div className="selection-effect-projects"></div>
           </>
           <h3>My Projects</h3>
+        </div>
+        <div
+          className={`desktop-app ${clickedApp === "contact" ? "clicked" : ""}`}
+          onDoubleClick={() => handleOpenWindow("contact")}
+          onClick={() => setClickedApp("contact")}
+        >
+          <>
+            <img alt="Satellite logo" className="contact" />
+            <div className="selection-effect-contact"></div>
+          </>
+          <h3>Contact Me</h3>
         </div>
         <div
           className={`desktop-app ${clickedApp === "resume" ? "clicked" : ""}`}
@@ -99,6 +112,14 @@ function Desktop() {
                 onClose={() => handleCloseWindow(index)}
               />
             );
+          case "contact":
+            return (
+              <ContactWindow
+                key={index}
+                onClose={() => handleCloseWindow(index)}
+              />
+            );
+
           case "resume":
             return (
               <ResumeWindow
