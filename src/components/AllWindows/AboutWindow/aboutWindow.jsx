@@ -51,7 +51,7 @@ function AboutWindow({ onClose }) {
         <p>
           Hello, i'm Urani a {getAge()} year old software developer and designer
           based in Kosova. I like designing functional websites and then
-          bringing said websites into life, i'm always down to challenge myself
+          bringing said websites into life. I'm always down to challenge myself
           with new and crazy ideas.
         </p>
         <h2>------------------------------------</h2>
