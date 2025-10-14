@@ -22,8 +22,7 @@ function Desktop() {
     setOpenWindows((prevWindows) => prevWindows.filter((_, i) => i !== index));
   };
 
-  console.log("main branachhh")
-
+  console.log("example branch")
   const handleCloseWelcome = () => {
     setIsWelcomeOpen(false);
   };
