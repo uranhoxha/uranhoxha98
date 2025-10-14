@@ -22,6 +22,8 @@ function Desktop() {
     setOpenWindows((prevWindows) => prevWindows.filter((_, i) => i !== index));
   };
 
+  console.log("main branachhh")
+
   const handleCloseWelcome = () => {
     setIsWelcomeOpen(false);
   };
