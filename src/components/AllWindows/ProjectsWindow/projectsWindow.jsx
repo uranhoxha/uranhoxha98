@@ -27,7 +27,8 @@ function ProjectsWindow({ onClose }) {
     {
       image: foton,
       title: "Foton",
-      description: "The team at FOTON entrusted me with the full rebranding and redevelopment of their company website from the ground up. ",
+      description:
+        "The team at FOTON entrusted me with the full rebranding and redevelopment of their company website from the ground up. ",
       logos: [nextLogo, tailwindLogo, figmaLogo],
       madeBy: "Designed by Me",
       link: "https://foton-ks.com/",
@@ -38,7 +39,7 @@ function ProjectsWindow({ onClose }) {
       image: hyperscales,
       title: "HyperScales",
       description:
-        "Project we did while working at FOTON about a marketing agency based in USA.",
+        "Project i did while working at FOTON about a marketing agency based in the USA.",
       logos: [nextLogo, tailwindLogo, figmaLogo],
       madeBy: "Designed by Me",
       link: "https://www.hyperscales.digital/home",
@@ -118,7 +119,10 @@ function ProjectsWindow({ onClose }) {
       <h2>------------------------------------</h2>
       <h2>My Projects</h2>
       <h2>------------------------------------</h2>
-      <p>Projects i had the pleasure in working on from whole rebranding of companies to just silly projects i made to pass the time</p>
+      <p>
+        Projects i had the pleasure in working on from whole rebranding of
+        companies to just silly projects i made to pass the time.
+      </p>
       <h2>------------------------------------</h2>
       {projects.map((project, index) => (
         <a
@@ -149,9 +153,11 @@ function ProjectsWindow({ onClose }) {
               </div>
               <div className="project-footer">
                 <p>{project.madeBy}</p>
-                <a href={project.githubLink} target="_blank" rel="noreferrer">
-                  Github link
-                </a>
+                {project.githubLink && (
+                  <a href={project.githubLink} target="_blank" rel="noreferrer">
+                    Github link
+                  </a>
+                )}
               </div>
             </div>
           </div>

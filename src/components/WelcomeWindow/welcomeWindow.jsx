@@ -38,10 +38,10 @@ function WelcomeWindow({ onClose }) {
           <div className="welcomeWindow-contents-two">
             <h2>Welcome</h2>
             <p>
-              Welcome to my portfolio! This site is your gateway to discovering
-              my work and skills. Feel free to explore and enjoy the experience!
+              Welcome to my portfolio! This site is your portal to getting to
+              know me more, as a person and as a developer.
             </p>
-            <p>Sit back and relax as you take a brief tour of my world!</p>
+            <p>Click away and enjoy the retro experience!!</p>
             <p>(for a better experience use your PC to view this website)</p>
           </div>
         </div>
