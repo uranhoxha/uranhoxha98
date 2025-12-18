@@ -19,11 +19,23 @@ import scssLogo from "../../../assets/projectImages/scss.png";
 import figmaLogo from "../../../assets/projectImages/figma.png";
 import nextLogo from "../../../assets/projectImages/next.png";
 import tailwindLogo from "../../../assets/projectImages/tailwind.png";
+import mqTransport from "../../../assets/projectImages/mqtransport.png";
 
 import { MdOpenInNew } from "react-icons/md";
 
 function ProjectsWindow({ onClose }) {
   const projects = [
+    {
+      image: mqTransport,
+      title: "M&Q Transportation",
+      description:
+        "A full-stack website for a client in USA, the main focus of this website was the application form, where I created the sending-email system, did the design of the whole website and the frontend of it. It also has a backend but I did not take part in it",
+      logos: [nextLogo, tailwindLogo, figmaLogo],
+      madeBy: "Designed by Me",
+      link: "https://mqtransport.com",
+      githubLink: "",
+      target: "_blank",
+    },
     {
       image: foton,
       title: "Foton",
