@@ -1,130 +1,142 @@
-import Window from "../../Window/window";
-import folder_logo from "../../../assets/folder_small.png";
-import "./projectsWindow.scss";
+import Window from '../../Window/window'
+import folder_logo from '../../../assets/folder_small.png'
+import './projectsWindow.scss'
 
-import maskedInMetal from "../../../assets/projectImages/masked_in_metal.png";
-import pawfectPals from "../../../assets/projectImages/pawfect_pals.png";
-import doit from "../../../assets/projectImages/doit.png";
-import uranhoxha98 from "../../../assets/projectImages/uranhoxha98.png";
-import gpt3 from "../../../assets/projectImages/gpt3.png";
-import cipherVault from "../../../assets/projectImages/ciphervault.png";
-import hyperscales from "../../../assets/projectImages/hyperscales.png";
-import foton from "../../../assets/projectImages/foton.png";
+import maskedInMetal from '../../../assets/projectImages/masked_in_metal.png'
+import pawfectPals from '../../../assets/projectImages/pawfect_pals.png'
+import doit from '../../../assets/projectImages/doit.png'
+import uranhoxha98 from '../../../assets/projectImages/uranhoxha98.png'
+import gpt3 from '../../../assets/projectImages/gpt3.png'
+import cipherVault from '../../../assets/projectImages/ciphervault.png'
+import hyperscales from '../../../assets/projectImages/hyperscales.png'
+import foton from '../../../assets/projectImages/foton.png'
 
-import reactLogo from "../../../assets/projectImages/react.png";
-import htmlLogo from "../../../assets/projectImages/html.png";
-import cssLogo from "../../../assets/projectImages/css.png";
-import JSLogo from "../../../assets/projectImages/javascript.png";
-import scssLogo from "../../../assets/projectImages/scss.png";
-import figmaLogo from "../../../assets/projectImages/figma.png";
-import nextLogo from "../../../assets/projectImages/next.png";
-import tailwindLogo from "../../../assets/projectImages/tailwind.png";
-import mqTransport from "../../../assets/projectImages/mqtransport.png";
+import reactLogo from '../../../assets/projectImages/react.png'
+import htmlLogo from '../../../assets/projectImages/html.png'
+import cssLogo from '../../../assets/projectImages/css.png'
+import JSLogo from '../../../assets/projectImages/javascript.png'
+import scssLogo from '../../../assets/projectImages/scss.png'
+import figmaLogo from '../../../assets/projectImages/figma.png'
+import nextLogo from '../../../assets/projectImages/next.png'
+import tailwindLogo from '../../../assets/projectImages/tailwind.png'
+import mqTransport from '../../../assets/projectImages/mqtransport.png'
+import tailGrad from '../../../assets/projectImages/tailgrad.png'
 
-import { MdOpenInNew } from "react-icons/md";
+import { MdOpenInNew } from 'react-icons/md'
 
 function ProjectsWindow({ onClose }) {
   const projects = [
     {
-      image: mqTransport,
-      title: "M&Q Transportation",
+      image: tailGrad,
+      title: 'TailGrad',
       description:
-        "A full-stack website for a client in USA, the main focus of this website was the application form, where I created the sending-email system, did the design of the whole website and the frontend of it. It also has a backend but I did not take part in it",
+        'Tired of the paywalls for the tailwind gradient and a bunch of ads and cookies and demons, i decided to make my own simple/get-the-job-done gradient generator for tailwind and vanilla css. It aint much but its free, open-source and it does the job pretty well.',
+      logos: [htmlLogo, cssLogo, JSLogo],
+      madeBy: 'Designed by Me',
+      link: 'https://tail-grad.vercel.app/',
+      githubLink: '',
+      target: '_blank',
+    },
+    {
+      image: mqTransport,
+      title: 'M&Q Transportation',
+      description:
+        'A full-stack website for a client in USA, the main focus of this website was the application form, where I created the sending-email system, did the design of the whole website and the frontend of it. It also has a backend but I did not take part in it',
       logos: [nextLogo, tailwindLogo, figmaLogo],
-      madeBy: "Designed by Me",
-      link: "https://mqtransport.com",
-      githubLink: "",
-      target: "_blank",
+      madeBy: 'Designed by Me',
+      link: 'https://mqtransport.com',
+      githubLink: '',
+      target: '_blank',
     },
     {
       image: foton,
-      title: "Foton",
+      title: 'Foton',
       description:
-        "The team at FOTON entrusted me with the full rebranding and redevelopment of their company website from the ground up. ",
+        'The team at FOTON entrusted me with the full rebranding and redevelopment of their company website from the ground up. ',
       logos: [nextLogo, tailwindLogo, figmaLogo],
-      madeBy: "Designed by Me",
-      link: "https://foton-ks.com/",
-      githubLink: "",
-      target: "_blank",
+      madeBy: 'Designed by Me',
+      link: 'https://foton-ks.com/',
+      githubLink: '',
+      target: '_blank',
     },
     {
       image: hyperscales,
-      title: "HyperScales",
+      title: 'HyperScales',
       description:
-        "Project i did while working at FOTON about a marketing agency based in the USA.",
+        'Project i did while working at FOTON about a marketing agency based in the USA.',
       logos: [nextLogo, tailwindLogo, figmaLogo],
-      madeBy: "Designed by Me",
-      link: "https://www.hyperscales.digital/home",
-      githubLink: "",
-      target: "_blank",
+      madeBy: 'Designed by Me',
+      link: 'https://www.hyperscales.digital/home',
+      githubLink: '',
+      target: '_blank',
     },
 
     {
       image: cipherVault,
-      title: "Cipher Vault",
+      title: 'Cipher Vault',
       description:
-        "Project about different encryption methods and how to use them.",
+        'Project about different encryption methods and how to use them.',
       logos: [htmlLogo, cssLogo, JSLogo],
-      madeBy: "Designed by Me",
-      link: "https://cipher-vault.netlify.app/",
-      githubLink: "https://github.com/uranhoxha/Data-Security-Project",
-      target: "_blank",
+      madeBy: 'Designed by Me',
+      link: 'https://cipher-vault.netlify.app/',
+      githubLink: 'https://github.com/uranhoxha/Data-Security-Project',
+      target: '_blank',
     },
     {
       image: gpt3,
-      title: "GPT3",
+      title: 'GPT3',
       description:
-        "First ever website I coded with React with the help of a YouTube video.",
+        'First ever website I coded with React with the help of a YouTube video.',
       logos: [reactLogo, cssLogo],
-      madeBy: "Designed by JavaScript Mastery",
-      link: "https://gpt3-website-urani.netlify.app/",
-      githubLink: "https://github.com/uranhoxha/GPT3-Website",
-      target: "_blank",
+      madeBy: 'Designed by JavaScript Mastery',
+      link: 'https://gpt3-website-urani.netlify.app/',
+      githubLink: 'https://github.com/uranhoxha/GPT3-Website',
+      target: '_blank',
     },
     {
       image: pawfectPals,
-      title: "Pawfect Pals",
+      title: 'Pawfect Pals',
       description:
-        "Designed in Figma when I was learning how to use it. Adoption Center website for a made-up company.",
+        'Designed in Figma when I was learning how to use it. Adoption Center website for a made-up company.',
       logos: [reactLogo, cssLogo, figmaLogo],
-      madeBy: "Designed by Me",
-      link: "https://pawfect-pals.netlify.app/",
-      githubLink: "https://github.com/uranhoxha/petshop",
-      target: "_blank",
+      madeBy: 'Designed by Me',
+      link: 'https://pawfect-pals.netlify.app/',
+      githubLink: 'https://github.com/uranhoxha/petshop',
+      target: '_blank',
     },
     {
       image: maskedInMetal,
-      title: "Masked In Metal",
+      title: 'Masked In Metal',
       description:
-        "An e-commerce to showcase my design and design-to-code skills for one of my favorite artists.",
+        'An e-commerce to showcase my design and design-to-code skills for one of my favorite artists.',
       logos: [reactLogo, cssLogo, figmaLogo],
-      madeBy: "Designed by Me",
-      link: "https://masked-in-metal.netlify.app/",
-      githubLink: "https://github.com/uranhoxha/mfdoom-shop",
-      target: "_blank",
+      madeBy: 'Designed by Me',
+      link: 'https://masked-in-metal.netlify.app/',
+      githubLink: 'https://github.com/uranhoxha/mfdoom-shop',
+      target: '_blank',
     },
     {
       image: doit,
-      title: "Do It",
+      title: 'Do It',
       description:
-        "Project I submitted for my first ever bootcamp on my first year of college. A simple to-do app with many bugs and design flaws :D.",
+        'Project I submitted for my first ever bootcamp on my first year of college. A simple to-do app with many bugs and design flaws :D.',
       logos: [htmlLogo, cssLogo, JSLogo, figmaLogo],
-      madeBy: "Designed by Me",
-      link: "https://doit-task-managment.netlify.app/",
-      githubLink: "https://github.com/uranhoxha/doit",
-      target: "_blank",
+      madeBy: 'Designed by Me',
+      link: 'https://doit-task-managment.netlify.app/',
+      githubLink: 'https://github.com/uranhoxha/doit',
+      target: '_blank',
     },
     {
       image: uranhoxha98,
-      title: "uranhoxha98",
-      description: "My current portfolio. The website you are currently on.",
+      title: 'uranhoxha98',
+      description: 'My current portfolio. The website you are currently on.',
       logos: [reactLogo, scssLogo],
-      madeBy: "Designed by Me",
-      link: "#",
-      githubLink: "https://github.com/uranhoxha/uranhoxha98",
-      target: "_self",
+      madeBy: 'Designed by Me',
+      link: '#',
+      githubLink: 'https://github.com/uranhoxha/uranhoxha98',
+      target: '_self',
     },
-  ];
+  ]
 
   return (
     <Window title="My Projects" iconSrc={folder_logo} onClose={onClose}>
@@ -176,7 +188,7 @@ function ProjectsWindow({ onClose }) {
         </a>
       ))}
     </Window>
-  );
+  )
 }
 
-export default ProjectsWindow;
+export default ProjectsWindow
