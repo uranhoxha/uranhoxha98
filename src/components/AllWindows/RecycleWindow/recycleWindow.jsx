@@ -9,7 +9,7 @@ function recycleWindow({ onClose }) {
         <h2>------------------------------------</h2>
         <h2>404s & Heartbreak</h2>
         <h2>------------------------------------</h2>
-        <p>The trash is currently empty, speaking of trash cans make sure to throw the trash in the trash cans, like in the real world, seriously.</p>
+        <p>The trash is currently empty, speaking of trash cans make sure you recycle, throwing trash everywhere is not cool.</p>
       </div>
     </Window>
   );

@@ -21,11 +21,23 @@ import nextLogo from '../../../assets/projectImages/next.png'
 import tailwindLogo from '../../../assets/projectImages/tailwind.png'
 import mqTransport from '../../../assets/projectImages/mqtransport.png'
 import tailGrad from '../../../assets/projectImages/tailgrad.png'
+import qrCode from '../../../assets/projectImages/qr_code.png'
 
 import { MdOpenInNew } from 'react-icons/md'
 
 function ProjectsWindow({ onClose }) {
   const projects = [
+    {
+      image: qrCode,
+      title: 'QR Code Generator',
+      description:
+        'Pretty straightforward QR generator that actually works and its free to use. Made it because I always struggled to find one that actually works without making me make an account or click through 4billion ads.',
+      logos: [nextLogo,tailwindLogo],
+      madeBy: 'Designed by Me',
+      link: 'https://nobsqr.vercel.app/',
+      githubLink: 'https://github.com/uranhoxha/qr-codeGen-withoutBs?tab=readme-ov-file',
+      target: '_blank',
+    },
     {
       image: tailGrad,
       title: 'TailGrad',
@@ -34,7 +46,7 @@ function ProjectsWindow({ onClose }) {
       logos: [htmlLogo, cssLogo, JSLogo],
       madeBy: 'Designed by Me',
       link: 'https://tail-grad.vercel.app/',
-      githubLink: '',
+      githubLink: 'https://github.com/uranhoxha/TailGrad',
       target: '_blank',
     },
     {
