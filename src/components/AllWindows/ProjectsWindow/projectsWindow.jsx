@@ -22,20 +22,33 @@ import tailwindLogo from '../../../assets/projectImages/tailwind.png'
 import mqTransport from '../../../assets/projectImages/mqtransport.png'
 import tailGrad from '../../../assets/projectImages/tailgrad.png'
 import qrCode from '../../../assets/projectImages/qr_code.png'
+import rockyMountain from '../../../assets/projectImages/rocky_mountain.png'
 
 import { MdOpenInNew } from 'react-icons/md'
 
 function ProjectsWindow({ onClose }) {
   const projects = [
     {
+      image: rockyMountain,
+      title: 'Rocky Mountain',
+      description:
+        'Website for a client located in USA, build it from the ground up, from the design of the website to the logo and the content.',
+      logos: [nextLogo, tailwindLogo, figmaLogo],
+      madeBy: 'Designed by Me',
+      link: 'https://rocky-mountain.site/home',
+      githubLink: '',
+      target: '_blank',
+    },
+    {
       image: qrCode,
       title: 'QR Code Generator',
       description:
         'Pretty straightforward QR generator that actually works and its free to use. Made it because I always struggled to find one that actually works without making me make an account or click through 4billion ads.',
-      logos: [nextLogo,tailwindLogo],
+      logos: [nextLogo, tailwindLogo],
       madeBy: 'Designed by Me',
       link: 'https://nobsqr.vercel.app/',
-      githubLink: 'https://github.com/uranhoxha/qr-codeGen-withoutBs?tab=readme-ov-file',
+      githubLink:
+        'https://github.com/uranhoxha/qr-codeGen-withoutBs?tab=readme-ov-file',
       target: '_blank',
     },
     {
